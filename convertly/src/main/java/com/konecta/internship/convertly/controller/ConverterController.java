@@ -15,8 +15,8 @@ public class ConverterController {
 
     // POST /convert
     @PostMapping("convert")
-    public ConversionResponse convert(@RequestBody ConversionRequest request) {
-            return conversionService.convert(request);
+    public ConversionResponse convert(@jakarta.validation.Valid @RequestBody ConversionRequest request) {
+        return conversionService.convert(request);
     }
 
     // GET /categories

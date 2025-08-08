@@ -1,9 +1,20 @@
+
 package com.konecta.internship.convertly.model;
 
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Min;
+
 public class ConversionRequest {
+    @NotNull(message = "Category is required")
     private String category;
+
+    @NotNull(message = "From unit is required")
     private String fromUnit;
+
+    @NotNull(message = "To unit is required")
     private String toUnit;
+
+    @Min(value = 0, message = "Value must be non-negative")
     private double value;
 
     // Getters and setters
