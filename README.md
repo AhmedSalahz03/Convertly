@@ -44,7 +44,7 @@ curl http://localhost:8080/categories
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/convertly.git
+   https://github.com/AhmedSalahz03/Convertly.git
    cd convertly
    ```
 
